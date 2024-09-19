@@ -5,20 +5,20 @@ const caixaResultado = document.querySelector('.caixa-resultado');
 
 const perguntas = [
     {
-        enunciado: "você gosta da ideia da interligencia artificial?",
-        alternativas:["sim", "nao"]
+        enunciado: "Você gosta da ideia de Inteligência Artificial?",
+        alternativas:["Sim","Não"]
     },
     {
-        enunciado: " a inteligencia artificial pode desenvolver conciência própria?",
-        alternativas:["sim", "nao"]
+        enunciado: "Pergunta 2",
+        alternativas:["Alternativa 1","Alternativa 2"]
     },
     {
-        enunciado: "a inteligencia artificial pode tomar decisoes eticas de forma completamente autonoma?",
-        alternativas:["sim", "nao"]
+        enunciado: "Pergunta 3",
+        alternativas:["Alternativa 1","Alternativa 2"]
     }
 ]
 
-let atual = 0;
+let posicao = 0;
 let perguntaAtual;
 
 function mostraPergunta(){
@@ -31,10 +31,5 @@ function mostraAlternativas(){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa;
         caixaAlternativa.appendChild(botaoAlternativas);
-
     }
 }
-
-
-
-
